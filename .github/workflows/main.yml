@@ -1,0 +1,17 @@
+name: Workflow TP1 messages linux
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
+
+jobs:
+  test:
+    runs-on: ubuntu:latest
+    name: main_job
+    steps:
+      - run: |
+          echo "Récupération du code source"
+          echo "Vérification terminée"
+        
+      
