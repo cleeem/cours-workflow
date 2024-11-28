@@ -2,14 +2,14 @@ name: Workflow TP1 messages linux
 
 on:
   workflow_dispatch:
-  # schedule:
-  #   - cron: "0 * * * *"
+  schedule:
+    - cron: '0 * * * *'
 
 jobs:
-  test:
+  main_job:
     runs-on: ubuntu-latest
-    name: main_job
     steps:
-      - run: |
-          echo "Récupération du code source"
-          echo "Vérification terminée"
+      - name: Checkout source code
+        run: echo "Récupération du code source"
+      - name: Check finished
+        run: echo "Vérification terminée"
