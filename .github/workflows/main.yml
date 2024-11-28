@@ -3,7 +3,7 @@ name: Workflow TP1 messages linux
 on:
   workflow_dispatch:
   # schedule:
-    # - cron: "0 * * * *"
+  #   - cron: "0 * * * *"
 
 jobs:
   test:
@@ -13,5 +13,3 @@ jobs:
       - run: |
           echo "Récupération du code source"
           echo "Vérification terminée"
-        
-      
