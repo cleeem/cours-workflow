@@ -11,5 +11,9 @@ jobs:
     steps:
       - name: Checkout source code
         run: echo "Récupération du code source"
+      
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+      
       - name: Check finished
         run: echo "Vérification terminée"
